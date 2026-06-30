@@ -1,0 +1,17 @@
+{
+  "name": "@phaser/game-agent",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Phaser Game Agent — connect your coding agent (Claude Code, VS Code, Codex, Cursor, Gemini CLI, …) to build Phaser games on your own subscription.",
+  "keywords": ["phaser", "game-agent", "mcp", "claude", "vscode", "codex", "cursor", "gemini", "game-development", "ai"],
+  "homepage": "https://github.com/phaserjs/phaser-game-agent#readme",
+  "repository": { "type": "git", "url": "git+https://github.com/phaserjs/phaser-game-agent.git" },
+  "bugs": { "url": "https://github.com/phaserjs/phaser-game-agent/issues" },
+  "author": "Phaser Studio Inc. (https://phaser.io)",
+  "license": "MIT",
+  "bin": { "phaser-game-agent": "./index.mjs" },
+  "files": ["index.mjs", "targets.mjs", "bridge.mjs", "README.md", "NOTICE.md", "LICENSE", "skills"],
+  "scripts": { "test": "node targets.test.mjs" },
+  "engines": { "node": ">=20" },
+  "publishConfig": { "access": "public" }
+}
