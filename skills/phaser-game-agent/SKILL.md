@@ -15,7 +15,7 @@ The build tools live in the **Phaser Game Agent MCP**. If the `pga_*` tools are 
 available in this session, ask the user to connect it:
 
 ```bash
-npx @phaser/game-agent
+npx @phaserjs/game-agent
 ```
 
 This signs them in (their own Phaser subscription) and writes the MCP config for this CLI;

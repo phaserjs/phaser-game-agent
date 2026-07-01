@@ -1,11 +1,11 @@
-# @phaser/game-agent
+# @phaserjs/game-agent
 
 Connect your **own** coding agent to the **Phaser Game Agent** and build Phaser games on a
 private cloud workspace — your subscription drives the model, your Phaser account owns the
 workspace.
 
 ```bash
-npx @phaser/game-agent            # one-shot: detect your CLIs → pick → sign in → configure
+npx @phaserjs/game-agent            # one-shot: detect your CLIs → pick → sign in → configure
 ```
 
 That's the whole thing: it finds the coding-agent CLIs you have installed, lets you pick,
@@ -21,11 +21,11 @@ balance, and a menu to reconfigure CLIs, refresh your token, buy credits, or log
 ### Commands
 
 ```bash
-npx @phaser/game-agent login      # browser sign-in (or --token <t>) → stores your token
-npx @phaser/game-agent setup      # write MCP config (--tool <id>|all, else detect + pick)
-npx @phaser/game-agent manual     # print copy-paste MCP config for ANY non-listed client
-npx @phaser/game-agent status     # who you are, access, and which CLIs are configured
-npx @phaser/game-agent logout     # remove the token + every MCP config entry
+npx @phaserjs/game-agent login      # browser sign-in (or --token <t>) → stores your token
+npx @phaserjs/game-agent setup      # write MCP config (--tool <id>|all, else detect + pick)
+npx @phaserjs/game-agent manual     # print copy-paste MCP config for ANY non-listed client
+npx @phaserjs/game-agent status     # who you are, access, and which CLIs are configured
+npx @phaserjs/game-agent logout     # remove the token + every MCP config entry
 ```
 
 ### Using a client we don't list
@@ -56,8 +56,8 @@ is **one row** in [`targets.mjs`](./targets.mjs); *experimental* means the confi
 from the tool's docs but we haven't yet confirmed the tools load after a restart (please report).
 
 > **Install globally for the bridge's sake.** The bridge-based CLIs store an absolute path to
-> `bridge.mjs`. With `npm i -g @phaser/game-agent` that path is stable; pure `npx` keeps it in a
-> cache that can be cleared. Use the one-shot `npx` to get started, then `npm i -g @phaser/game-agent`
+> `bridge.mjs`. With `npm i -g @phaserjs/game-agent` that path is stable; pure `npx` keeps it in a
+> cache that can be cleared. Use the one-shot `npx` to get started, then `npm i -g @phaserjs/game-agent`
 > if you rely on Codex/Cursor/etc.
 
 ## Options
@@ -75,7 +75,7 @@ Default endpoint: `https://mcp.phaser.io/agent/mcp`.
 
 A thin `phaser-game-agent` [SKILL.md](./skills/phaser-game-agent/SKILL.md) ships alongside, so
 agents that use the open Agent-Skills ecosystem can discover it. It can't register the MCP by
-itself — its body tells the agent to run `npx @phaser/game-agent` to wire it up.
+itself — its body tells the agent to run `npx @phaserjs/game-agent` to wire it up.
 
 ## Develop / test
 
@@ -87,7 +87,7 @@ node index.mjs status                       # run without installing
 
 npm pack --dry-run                          # confirm the published file list
 npm pack && npm i -g ./phaser-game-agent-*.tgz   # exercise the real artifact
-npm rm -g @phaser/game-agent                # clean up
+npm rm -g @phaserjs/game-agent                # clean up
 ```
 
 To add a CLI: add a row to `targets.mjs` (id, name, format, file path, serversKey, transport),
@@ -100,7 +100,7 @@ then verify by restarting that CLI and confirming the Phaser Game Agent tools ap
 
 ```bash
 npm pack --dry-run     # confirm the file list (index.mjs, targets.mjs, bridge.mjs, skills/, NOTICE.md, LICENSE)
-npm publish            # scoped public (publishConfig.access=public); needs @phaser org rights
+npm publish            # scoped public (publishConfig.access=public); needs @phaserjs org rights
 ```
 
 Prior art: the detect-then-configure approach is informed by

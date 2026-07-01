@@ -282,7 +282,7 @@ B)  STDIO BRIDGE — works with EVERY MCP client. Runs the bundled bridge; token
 
 Tips
   • Prefer (A) if your client offers a "remote / HTTP MCP server" option; otherwise use (B).
-  • (B)'s command/args point at your GLOBAL install — keep it installed: npm i -g @phaser/game-agent
+  • (B)'s command/args point at your GLOBAL install — keep it installed: npm i -g @phaserjs/game-agent
   • Our endpoint needs the token even to list tools, so a URL-only add with no header won't work.
   • If your client connected, "Check my Phaser Game Agent account" greets you by name.
 

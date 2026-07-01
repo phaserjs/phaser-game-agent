@@ -1,5 +1,5 @@
 {
-  "name": "@phaser/game-agent",
+  "name": "@phaserjs/game-agent",
   "version": "1.0.0",
   "type": "module",
   "description": "Phaser Game Agent — connect your coding agent (Claude Code, VS Code, Codex, Cursor, Gemini CLI, …) to build Phaser games on your own subscription.",
