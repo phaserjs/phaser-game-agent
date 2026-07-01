@@ -18,6 +18,17 @@ first.
 Running `phaser-game-agent` again while signed in shows who you're logged in as, your credit
 balance, and a menu to reconfigure CLIs, refresh your token, buy credits, or log out.
 
+## Documentation
+
+Full docs live in [`docs/`](./docs/):
+
+- [Getting started](./docs/getting-started.md) — install, sign in, verify, build your first game
+- [How it works](./docs/how-it-works.md) — MCP, the two transports, auth, what gets written where
+- [CLI reference](./docs/cli-reference.md) — every command, flag, and environment variable
+- [Connecting your editor](./docs/connecting-editors.md) — per-editor setup for every supported CLI
+- [Connecting any other client (manual)](./docs/manual-setup.md) — wire up any MCP client by hand
+- [Troubleshooting](./docs/troubleshooting.md) — the usual gotchas
+
 ### Commands
 
 ```bash
